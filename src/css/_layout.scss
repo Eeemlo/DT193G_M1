@@ -1,0 +1,69 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+#frontHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+}
+
+#largeNav {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    width: 100%;
+    top: 0;
+    background: #ffffff15;
+    width: 100%;
+    padding: 10px;
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+
+    li {
+        display: inline-block;
+        margin: 0.5em;
+    }
+}
+
+#mobileNav {
+    display: none;
+}
+
+.headerImg {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    z-index: -10;
+    object-fit: cover;
+}
+
+.headerImg img {
+    width: 100%; /* Se till att bilden täcker hela bredden */
+    height: auto; /* Bibehåll bildförhållandet */
+}
+
+// Gradienteffekt över headerbilden
+.headerImg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 1) 100%);
+    pointer-events: none; // Förhindra att gradienten stör interaktioner med bilden
+}
