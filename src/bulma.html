@@ -5,8 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bulma || DT193G - Moment 1</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <script src="js/bootstrap.js" type="module"></script>
 </head>
+
 <body>
+    <header>
+        <!-- Navigation för stora och små skärmar -->
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                    <picture class="logo">
+                        <source srcset="images/logo_white.png?as=webp&width=150&height=70" type="image/webp">
+                        <img src="images/logo_white.png?width=150&height=70" alt="logo">
+                    </picture>
+                </a>
     
+                <!-- Hamburger "knapp" för mobilnavigation -->
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+    
+            <!-- Meny för både stora och små skärmar -->
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-start">
+                    <!-- Här kan du lägga till ytterligare menyobjekt till vänster om det behövs -->
+                </div>
+    
+                <div class="navbar-end">
+                    <a class="navbar-item" href="index.html">Hem</a>
+                    <a class="navbar-item" href="bulma.html">Bulma</a>
+                    <a class="navbar-item" href="bootstrap.html">Bootstrap</a>
+                    <a class="navbar-item" href="publicering.html">Publicering</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!--Sidrubrik-->
+        <h1>Bulma</h1>
+
+        <!--Sektion för information om uppgiften-->
+        <section>
+            <h2>Om uppgiften</h2>
+            <p>Uppgiftens huvudsakliga syfte var att utvärdera minst två olika CSS-ramverk genom att skapa en webbplats
+                innehållandes minst följande fyra undersidor:</p>
+            <ul>
+                <li>Startsida</li>
+                <li>Ramverk 1</li>
+                <li>Ramverk 2</li>
+                <li>Publicering</li>
+            </ul>
+            <p>
+            Startsidan skulle innehålla information om uppgiften och om vilka ramverk som testats. Respektive
+            ramverkssida skulle innehålla information om det testade ramverket och egna reflektioner samt en tabell med
+            minst fyra fält och fem rader med data och ett formulär för att lägga till data. Respektive ramverkssida
+            skulle byggas med det valda ramverket. Publiceringssidan skulle innehålla en beskrivning av den
+            publiceringsplattform som valts för att publicera webbplatsen.
+            </p>
+        </section>
+
+        <!--Sektion för information om testade ramverk-->
+        <section>
+            <h2>Testade ramverk</h2>
+            <article>
+                <h3>Bulma</h3>
+            </article>
+            <article>
+                <h3>Bootstrap</h3>
+            </article>
+        </section>
+    </main>
+
+<footer>
+<p>Skapad av: Emma Lorensson | DT193G - Fullstackutveckling med ramverk</p>
+</footer>
 </body>
 </html>
