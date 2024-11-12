@@ -1,0 +1,27 @@
+/*Textfärg*/
+$text-light: #fff;
+$text-dark: #000;
+
+/*Färgschema*/
+$primary-color: #26a6aa;
+
+
+/*Teckensnitt*/
+$h1font1: "brightsans", verdana;
+$h1font2: "brightscript", verdana;
+$font-stack: "Poppins", verdana, sans-serif;
+
+/*Import av teckensnitt*/
+/*
+@font-face {
+  font-family: brightsans;
+  src: url("../fonts/bright-darling-sans.otf") format("opentype");
+}
+
+@font-face {
+  font-family: brightscript;
+  src: url("../fonts/bright-darling-script.otf") format("opentype");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap");
+*/
