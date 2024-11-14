@@ -78,9 +78,10 @@
         <thead>
             <tr>
             <th>Förnamn</th>
-            <th>Antal syskon</th>
+            <th class="has-text-centered">Antal syskon</th>
             <th>Bästa partytrick</th>
-            <th>Gillar kall öl</th>
+            <th class="has-text-centered">Gillar kall öl</th>
+            <th class="has-text-centered">Radera</th>
         </tr>
         </thead>
         <tbody>
@@ -89,33 +90,75 @@
                 <td class="has-text-centered">1</td>
                 <td>Jag kan jonglera med snusdosor</td>
                 <td class="has-text-centered">Ja</td>
+                <td class="has-text-centered">
+                    <p class="control">
+                        <a class="button is-small is-danger deleteBtn">
+                          X
+                        </a>
+                      </p>
+                </td>
             </tr>
             <tr>
                 <th>Sara</th>
                 <td class="has-text-centered">3</td>
                 <td>Kan trolla fram en femma ur någons öra</td>
                 <td class="has-text-centered">Nej</td>
+                <td class="has-text-centered">
+                    <p class="control">
+                        <a class="button is-small is-danger deleteBtn">
+                          X
+                        </a>
+                      </p>
+                </td>
             </tr>
             <tr>
                 <th>Sofia</th>
                 <td class="has-text-centered">1</td>
                 <td>Jag kan dansa ståendes på händer</td>
                 <td class="has-text-centered">Ja</td>
+                <td class="has-text-centered">
+                    <p class="control">
+                        <a class="button is-small is-danger deleteBtn">
+                          X
+                        </a>
+                      </p>
+                </td>
             </tr>
             <tr>
                 <th>Charlotta</th>
                 <td class="has-text-centered">2</td>
                 <td>Jag sjunger bättre än Whitney Houston</td>
                 <td class="has-text-centered">Ja</td>
+                <td class="has-text-centered">
+                    <p class="control">
+                        <a class="button is-small is-danger deleteBtn">
+                          X
+                        </a>
+                      </p>
+                </td>
             </tr>
             <tr>
                 <th>Calle</th>
                 <td class="has-text-centered">3</td>
                 <td>Vet inte</td>
                 <td class="has-text-centered">Ja</td>
+                <td class="has-text-centered">
+                    <p class="control">
+                        <a class="button is-small is-danger deleteBtn">
+                          X
+                        </a>
+                      </p>
+                </td>
             </tr>
         </tbody>
     </table>
+    <div class="field mb-6">
+        <p class="control">
+          <a class="button is-danger is-small is-light" id="clearBtn">
+            Rensa formulär
+          </a>
+        </p>
+      </div>
 </section>
 
             <!--Formulär-->
@@ -125,7 +168,7 @@
                 <div class="field mt-5">
                     <label class="label">Förnamn</label>
                     <p class="control has-icons-left">
-                        <input class="input text" type="text" placeholder="Ange ditt förnamn">
+                        <input class="input text" id="nameText" type="text" placeholder="Ange ditt förnamn">
                         <span class="icon is-small is-left">
                             <i class="fas fa-user"></i>
                         </span>
@@ -136,7 +179,7 @@
                 <div class="mt-5">
                     <label class="label">Hur många syskon har du?</label>
                     <div class="select">
-                        <select class="control">
+                        <select class="control" id="select">
                             <option value="0">0</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -154,7 +197,7 @@
                 <div class="field mt-5">
                     <label class="label">Beskriv ditt bästa partytrick:</label>
                     <div class="control">
-                        <textarea class="textarea has-fixed-size" placeholder="Skriv här..." rows="5">
+                        <textarea class="textarea has-fixed-size" id="textarea" placeholder="Skriv här..." rows="5">
                         </div>
                         </div>
 
@@ -162,22 +205,17 @@
                 <div class="checkbox">
                    
 <label class="checkbox my-5 has-text-primary-100">
-    <input type="checkbox"/>
+    <input type="checkbox" id="checkbox"/>
     Klicka i om du gillar en kall öl i solen
   </label>
                         </div>
 
-                        <!--Knappar-->
-                <div class="field is-grouped mb-6">
+                        <!--Skicka knapp-->
+                <div class="field mb-6">
                     <p class="control">
-                      <button class="button is-primary">
+                      <button class="button is-primary" id="sendBtn">
                         Skicka
                       </button>
-                    </p>
-                    <p class="control">
-                      <a class="button is-light">
-                        Rensa
-                      </a>
                     </p>
                   </div>
             </form>
