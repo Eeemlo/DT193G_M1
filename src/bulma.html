@@ -34,7 +34,6 @@
             <!-- Meny för både stora och små skärmar -->
             <div id="navbarMenu" class="navbar-menu">
                 <div class="navbar-start">
-                    <!-- Här kan du lägga till ytterligare menyobjekt till vänster om det behövs -->
                 </div>
 
                 <div class="navbar-end">
@@ -49,155 +48,163 @@
 
     <main>
         <div class="is-flex-direction-column is-justify-content-center px-2 container is-max-desktop">
-        <!--Sidrubrik-->
-        <h1 class="title mt-6 has-text-primary-25">Bulma</h1>
+            <!--Sidrubrik-->
+            <h1 class="title mt-6 has-text-primary-25">Bulma</h1>
 
-        <!--Sektion för information om Bulma-->
-        <section>
-            <article>
-                <h2 class="subtitle has-text-primary-on-scheme">Om Bulma</h2>
-                <p>Uppgiftens huvudsakliga syfte var att utvärdera minst två olika CSS-ramverk genom att skapa en
-                    webbplats
-                    innehållandes minst följande fyra undersidor:</p>
-            </article>
+            <!--Sektion för information om Bulma-->
+            <section>
+                <article class="mb-5">
+                    <h2 class="subtitle has-text-primary-on-scheme mb-2">Om Bulma</h2>
+                    <p>Bulma är ett CSS-ramverk har öppen källkod och är baserat på Flexbox. Det är 100% responsivt och
+                        fullt modulärt. Bulma tillhandahåller en mängd olika CSS-klasser för färdiga komponenter vilket
+                        gör det enkelt att bygga en mordern webbsida.</p>
+                    <a href="https://bulma.io/">Läs mer om Bulma här</a>
+                </article>
 
-            <article>
-                <h3 class="subtitle has-text-primary-on-scheme">Mina reflektioner</h3>
-                <p>blablabla</p>
-            </article>
+                <article>
+                    <h3 class="subtitle has-text-primary-on-scheme mb-2">Mina reflektioner</h3>
+                    <p>Personligen föredrog jag att arbeta med Bulma framför Bootstrap. Bulmas uppbyggnad av klasser och
+                        dokumentation kändes mer logiskt på något vis. Komponentutbudet är bra och det gick att välja
+                        mellan många olika färgsättningar.</p>
+                    <p>En nackdel jämfört med Bootstrap kan jag tycka var att det i vissa element krävdes lite väl många
+                        containrar. Därtill hade jag önskat lite mer färdiga marginaler runt rubriker och dylikt. Jag
+                        upplevde att allt placerades väldigt tätt och istället hade de kanske kunnat ha
+                        standardmarginaler som går att skriva över med separata klasser.</p>
+                </article>
 
-        </section>
+            </section>
 
-        <!--Sektion för tabell och formulär-->
-        <section>
-            <h2 class="subtitle mt-6 has-text-primary-on-scheme">Tabell och formulär</h2>
+            <!--Sektion för tabell och formulär-->
+            <section>
+                <h2 class="subtitle mt-6 has-text-primary-on-scheme">Tabell och formulär</h2>
 
-                        <!--TABELL-->
-<section>
-    <table class="table is-striped is-hoverable is-fullwidth">
-        <thead>
-            <tr>
-            <th>Förnamn</th>
-            <th class="has-text-centered">Antal syskon</th>
-            <th>Bästa partytrick</th>
-            <th class="has-text-centered">Gillar kall öl</th>
-            <th class="has-text-centered">Radera</th>
-        </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th>Emma</th>
-                <td class="has-text-centered">1</td>
-                <td>Jag kan jonglera med snusdosor</td>
-                <td class="has-text-centered">Ja</td>
-                <td class="has-text-centered">
-                    <p class="control">
-                        <a class="button is-small is-danger deleteBtn">
-                          X
-                        </a>
-                      </p>
-                </td>
-            </tr>
-            <tr>
-                <th>Sara</th>
-                <td class="has-text-centered">3</td>
-                <td>Kan trolla fram en femma ur någons öra</td>
-                <td class="has-text-centered">Nej</td>
-                <td class="has-text-centered">
-                    <p class="control">
-                        <a class="button is-small is-danger deleteBtn">
-                          X
-                        </a>
-                      </p>
-                </td>
-            </tr>
-            <tr>
-                <th>Sofia</th>
-                <td class="has-text-centered">1</td>
-                <td>Jag kan dansa ståendes på händer</td>
-                <td class="has-text-centered">Ja</td>
-                <td class="has-text-centered">
-                    <p class="control">
-                        <a class="button is-small is-danger deleteBtn">
-                          X
-                        </a>
-                      </p>
-                </td>
-            </tr>
-            <tr>
-                <th>Charlotta</th>
-                <td class="has-text-centered">2</td>
-                <td>Jag sjunger bättre än Whitney Houston</td>
-                <td class="has-text-centered">Ja</td>
-                <td class="has-text-centered">
-                    <p class="control">
-                        <a class="button is-small is-danger deleteBtn">
-                          X
-                        </a>
-                      </p>
-                </td>
-            </tr>
-            <tr>
-                <th>Calle</th>
-                <td class="has-text-centered">3</td>
-                <td>Vet inte</td>
-                <td class="has-text-centered">Ja</td>
-                <td class="has-text-centered">
-                    <p class="control">
-                        <a class="button is-small is-danger deleteBtn">
-                          X
-                        </a>
-                      </p>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <div class="field mb-6">
-        <p class="control">
-          <a class="button is-danger is-small is-light" id="clearBtn">
-            Rensa formulär
-          </a>
-        </p>
-      </div>
-</section>
-
-            <!--Formulär-->
-            <h1 class="subtitle my-6 has-text-primary-on-scheme">Lämna ett avtryck i tabellen</h2>
-            <form action="">
-                <!--Input text: förnamn-->
-                <div class="field mt-5">
-                    <label class="label">Förnamn</label>
-                    <p class="control has-icons-left">
-                        <input class="input text" id="nameText" type="text" placeholder="Ange ditt förnamn">
-                        <span class="icon is-small is-left">
-                            <i class="fas fa-user"></i>
-                        </span>
-                    </p>
-                </div>
-
-                <!--select: Antal syskon-->
-                <div class="mt-5">
-                    <label class="label">Hur många syskon har du?</label>
-                    <div class="select">
-                        <select class="control" id="select">
-                            <option value="0">0</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="fler">Fler än 7</option>
-                        </select>
+                <!--TABELL-->
+                <section>
+                    <table class="table is-striped is-hoverable is-fullwidth">
+                        <thead>
+                            <tr>
+                                <th>Förnamn</th>
+                                <th class="has-text-centered">Antal syskon</th>
+                                <th>Bästa partytrick</th>
+                                <th class="has-text-centered">Gillar kall öl</th>
+                                <th class="has-text-centered">Radera</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Emma</th>
+                                <td class="has-text-centered">1</td>
+                                <td>Jag kan jonglera med snusdosor</td>
+                                <td class="has-text-centered">Ja</td>
+                                <td class="has-text-centered">
+                                    <p class="control">
+                                        <a class="button is-small is-danger deleteBtn">
+                                            X
+                                        </a>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Sara</th>
+                                <td class="has-text-centered">3</td>
+                                <td>Kan trolla fram en femma ur någons öra</td>
+                                <td class="has-text-centered">Nej</td>
+                                <td class="has-text-centered">
+                                    <p class="control">
+                                        <a class="button is-small is-danger deleteBtn">
+                                            X
+                                        </a>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Sofia</th>
+                                <td class="has-text-centered">1</td>
+                                <td>Jag kan dansa ståendes på händer</td>
+                                <td class="has-text-centered">Ja</td>
+                                <td class="has-text-centered">
+                                    <p class="control">
+                                        <a class="button is-small is-danger deleteBtn">
+                                            X
+                                        </a>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Charlotta</th>
+                                <td class="has-text-centered">2</td>
+                                <td>Jag sjunger bättre än Whitney Houston</td>
+                                <td class="has-text-centered">Ja</td>
+                                <td class="has-text-centered">
+                                    <p class="control">
+                                        <a class="button is-small is-danger deleteBtn">
+                                            X
+                                        </a>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Calle</th>
+                                <td class="has-text-centered">3</td>
+                                <td>Vet inte</td>
+                                <td class="has-text-centered">Ja</td>
+                                <td class="has-text-centered">
+                                    <p class="control">
+                                        <a class="button is-small is-danger deleteBtn">
+                                            X
+                                        </a>
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="field mb-6">
+                        <p class="control">
+                            <a class="button is-danger is-small is-light" id="clearBtn">
+                                Rensa formulär
+                            </a>
+                        </p>
                     </div>
-                </div>
+                </section>
 
-                <!--textarea: Bästa partytrick-->
-                <div class="field mt-5">
-                    <label class="label">Beskriv ditt bästa partytrick:</label>
-                    <div class="control">
-                        <textarea class="textarea has-fixed-size" id="textarea" placeholder="Skriv här..." rows="5">
+                <!--Formulär-->
+                <h1 class="subtitle my-6 has-text-primary-on-scheme">Lämna ett avtryck i tabellen</h2>
+                    <form action="">
+                        <!--Input text: förnamn-->
+                        <div class="field mt-5">
+                            <label class="label">Förnamn</label>
+                            <p class="control has-icons-left">
+                                <input class="input text" id="nameText" type="text" placeholder="Ange ditt förnamn">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-user"></i>
+                                </span>
+                            </p>
+                        </div>
+
+                        <!--select: Antal syskon-->
+                        <div class="mt-5">
+                            <label class="label">Hur många syskon har du?</label>
+                            <div class="select">
+                                <select class="control" id="select">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="fler">Fler än 7</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!--textarea: Bästa partytrick-->
+                        <div class="field mt-5">
+                            <label class="label">Beskriv ditt bästa partytrick:</label>
+                            <div class="control">
+                                <textarea class="textarea has-fixed-size" id="textarea" placeholder="Skriv här..."
+                                    rows="5">
                         </div>
                         </div>
 

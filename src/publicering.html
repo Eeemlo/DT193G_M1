@@ -1,11 +1,78 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Publicering || DT193G - Moment 1</title>
+    <title>DT193G - Moment 1 || Emma Lorensson</title>
+    <link rel="stylesheet" href="css/main.scss">
 </head>
+
 <body>
-    
+    <header id="frontHeader">
+
+        <!--Herobild-->
+        <picture class="headerImg">
+            <source srcset="images/flower-header.jpg?as=webp&width=1900&height=650" type="image/webp">
+            <img src="images/flower-header.jpg?width=1900&height=650" alt="Blå blomma målad i vattenfärg">
+        </picture>
+
+        <!--Navigation för stora skärmar-->
+        <nav id="largeNav">
+            <a href="index.html">
+                <picture class="logo">
+                    <source srcset="images/logo_black.png?as=webp&width=150&height=70" type="image/webp">
+                    <img src="images/logo_black.png?width=150&height=70" alt="logo">
+                </picture>
+            </a>
+            <ul>
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="bulma.html">Bulma</a></li>
+                <li><a href="bootstrap.html">Bootstrap</a></li>
+                <li><a href="publicering.html">Publicering</a></li>
+            </ul>
+        </nav>
+
+        <!--Navigation för små skärmar/Hamburgermeny-->
+        <nav id="mobileNav">
+            <!--Hamburger "knapp" (dold på stora skärmar)-->
+            <button class="hamburger">
+                <div class="bar"></div>
+            </button>
+
+            <a href="index.html"><img src="images/logo_black.png" alt="Logo"></a>
+            <ul>
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="bulma.html">Bulma</a></li>
+                <li><a href="bootstrap.html">Bootstrap</a></li>
+                <li><a href="publicering.html">Publicering</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--Sidrubrik-->
+        <h1>Publicering</h1>
+
+        <!--Sektion för information om uppgiften-->
+        <section>
+            <h2>Vercel</h2>
+            <p>Jag använde Vercel för att publicera min webbplats, en för mig ny webhost då jag tidigare nästan
+                uteslutande valt att publicera med Netlify. Publicering av ett projekt på Vercel sker via Git-repon och
+                den publicerade sidan tilldelas en subdomän under vercel.app-domänen. Vercel är gratis på hobbynivå, men
+                de erbjuder även pro- och en enterprisekonton för företag och större organisationer. Vercel stöder en
+                mängd olika programmeringsspråk, däribland JavaScript och TypeScript, Python, Ruby och PHP.
+            </p>
+            <p>Jag måste säga att jag verkligen gillade att publicera med Vercel. Det var otroligt smidigt att sätta upp
+                ett konto och därefter valde jag bara mitt git-repo och tryckte på deploy, så var webbsidan publicerad
+                inom en minut. Jag kommer absolut att använda Vercel igen!</p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Skapad av: Emma Lorensson | DT193G - Fullstackutveckling med ramverk</p>
+    </footer>
 </body>
+
 </html>
