@@ -9,7 +9,6 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/bootstrap.js" type="module"></script>
-    <script src="js/formFunctionality.js" type="module"></script>
 </head>
 
 <body>
@@ -98,7 +97,7 @@
                                 <td>Jag kan jonglera med snusdosor</td>
                                 <td class="text-center">Ja</td>
                                 <td class="text-center">
-                                    <button type="button" class="btn btn-danger btn-sm">X</button>
+                                    <button type="button" class="btn btn-danger btn-sm deleteBtn">X</button>
                                 </td>
                             </tr>
                             <tr>
@@ -107,7 +106,7 @@
                                 <td>Kan trolla fram en femma ur någons öra</td>
                                 <td class="text-center">Nej</td>
                                 <td class="text-center">
-                                    <button type="button" class="btn btn-danger btn-sm">X</button>
+                                    <button type="button" class="btn btn-danger btn-sm deleteBtn">X</button>
                                 </td>
                             </tr>
                             <tr>
@@ -116,7 +115,7 @@
                                 <td>Jag kan dansa ståendes på händer</td>
                                 <td class="text-center">Ja</td>
                                 <td class="text-center">
-                                    <button type="button" class="btn btn-danger btn-sm">X</button>
+                                    <button type="button" class="btn btn-danger btn-sm deleteBtn">X</button>
                                 </td>
                             </tr>
                             <tr>
@@ -125,7 +124,7 @@
                                 <td>Jag sjunger bättre än Whitney Houston</td>
                                 <td class="text-center">Ja</td>
                                 <td class="text-center">
-                                    <button type="button" class="btn btn-danger btn-sm">X</button>
+                                    <button type="button" class="btn btn-danger btn-sm deleteBtn">X</button>
                                 </td>
                             </tr>
                             <tr>
@@ -134,80 +133,63 @@
                                 <td>Vet inte</td>
                                 <td class="text-center">Ja</td>
                                 <td class="text-center">
-                                    <button type="button" class="btn btn-danger btn-sm">X</button>
+                                    <button type="button" class="btn btn-danger btn-sm deleteBtn">X</button>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
                     <div class="field mb-5">
-                        <button type="button" class="btn btn-outline-danger">Rensa formulär</button>
+                        <button type="button" class="btn btn-outline-danger" id="clearBtn">Rensa formulär</button>
                     </div>
                 </section>
 
                 <!--Formulär-->
                 <h2 class="mt-5 text-secondary-emphasis">Lämna ett avtryck i tabellen</h2>
-                    <form action="">
-                        <!--Input text: förnamn-->
-                        <div class="field mt-5">
-                            <label class="label">Förnamn</label>
-                            <p class="control has-icons-left">
-                                <input class="input text" id="nameText" type="text" placeholder="Ange ditt förnamn">
-                                <span class="icon is-small is-left">
-                                    <i class="fas fa-user"></i>
-                                </span>
-                            </p>
-                        </div>
+                <form>
+                    <!--Input text: förnamn-->
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Förnamn</label>
+                        <input class="form-control" id="nameText" type="text" placeholder="Ange ditt förnamn">
+                    </div>
 
-                        <!--select: Antal syskon-->
-                        <div class="mt-5">
-                            <label class="label">Hur många syskon har du?</label>
-                            <div class="select">
-                                <select class="control" id="select">
-                                    <option value="0">0</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                    <option value="7">7</option>
-                                    <option value="fler">Fler än 7</option>
-                                </select>
-                            </div>
-                        </div>
+                    <!--select: Antal syskon-->
+                    <div class="mb-3">
+                        <label for="siblings" class="form-label">Hur många syskon har du?</label>
+                        <select class="form-select mb-3" id="select">
+                            <option selected>Välj</option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="fler">Fler än 7</option>
+                        </select>
+                    </div>
 
-                        <!--textarea: Bästa partytrick-->
-                        <div class="field mt-5">
-                            <label class="label">Beskriv ditt bästa partytrick:</label>
-                            <div class="control">
-                                <textarea class="textarea has-fixed-size" id="textarea" placeholder="Skriv här..."
-                                    rows="5">
-                        </div>
-                        </div>
+                    <!--textarea: Bästa partytrick-->
+                    <div class="mb-3">
+                        <label for="partyTrick" class="form-label">Beskriv ditt bästa partytrick:</label>
+                        <textarea class="form-control" id="textarea" rows="5" placeholder="Skriv här..">
+                    </div>
 
-                                        <!--checkbox: -->
-                <div class="checkbox">
-                   
-<label class="checkbox my-5 has-text-primary-100">
-    <input type="checkbox" id="checkbox"/>
-    Klicka i om du gillar en kall öl i solen
-  </label>
-                        </div>
+                    <!--checkbox: -->
+                    <div class="form-check mb-3">                 
+                        <input class="form-check-input" type="checkbox" id="checkbox"/>
+                        <label class="form-check-label">Klicka i om du gillar en kall öl i solen</label>
+                    </div>
 
-                        <!--Skicka knapp-->
-                <div class="field mb-6">
-                    <p class="control">
-                      <button class="button is-primary" id="sendBtn">
-                        Skicka
-                      </button>
-                    </p>
-                  </div>
-            </form>
-        </section>
-</div>
+                    <!--Skicka knapp-->
+                    <div class="mb-3">
+                        <button type="button" class="btn btn-light" id="sendBtn">Skicka</button>
+                    </div>
+                </form>
+            </section>
     </main>
 
-<footer class="footer">
+<footer class="py-5 mx-5 ">
 <p>Skapad av: Emma Lorensson | DT193G - Fullstackutveckling med ramverk</p>
 </footer>
 </body>
